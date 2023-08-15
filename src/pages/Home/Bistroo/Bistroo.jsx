@@ -1,6 +1,7 @@
 import React from 'react';
 
-import bistrooImg from '../../../assets/home/banner.jpg'
+// import bistrooImg from '../../../assets/home/banner.jpg'
+import bistrooImg from '../../../assets/home/chef-service.jpg'
 const Bistroo = () => {
   return (
     <div className='p-[50px]' style={{ backgroundImage: `url(${bistrooImg})`, backgroundSize: 'cover' }}>
