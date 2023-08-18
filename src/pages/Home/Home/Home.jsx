@@ -5,10 +5,14 @@ import Bistroo from '../Bistroo/Bistroo';
 import PopularMenu from '../PopularMenu/PopularMenu';
 import Fetured from '../Fetured/Fetured';
 import Testimonalias from '../Testimonaial/Testimonalias';
+import { Helmet } from 'react-helmet-async';
 
 const Home = () => {
   return (
     <div>
+      <Helmet>
+        <title>bistroo-boss || home</title>
+      </Helmet>
       <Bannar></Bannar>
       <Category></Category>
       <Bistroo></Bistroo>

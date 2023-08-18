@@ -19,8 +19,9 @@ const PopularMenu = () => {
         {
           menu.map(item => <MenuItem item={item} key={item._id}></MenuItem>)
         }
-      </div>
 
+      </div>
+      <button className='btn b-0 border-b-4 mt-5 btn-outline d-block'>Order now </button>
     </div>
   );
 };
