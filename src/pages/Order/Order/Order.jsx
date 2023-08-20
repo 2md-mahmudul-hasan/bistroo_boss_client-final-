@@ -4,6 +4,7 @@ import 'react-tabs/style/react-tabs.css';
 import orderImg from '../../../assets/shop/banner2.jpg'
 import Cover from '../../Shared/Cover/Cover';
 import useMenu from '../../../hooks/useMenu';
+import FoodCart from '../../../components/FoodCart';
 const Order = () => {
   const [tabIndex, setTabIndex] = useState(0);
   const [menu] = useMenu()
@@ -26,20 +27,40 @@ const Order = () => {
         </TabList>
 
         <TabPanel>
-          <h2>Any content 1</h2>
+          <div className="grid grid-cols-3 gap-10">
+            {
+              salads.map(item => <FoodCart item={item} key={item._id}></FoodCart>)
+            }
+          </div>
         </TabPanel>
-        <TabPanel>
-          <h2>Any content 2</h2>
+        <TabPanel className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 gap-10">
+            {
+              pizza.map(item => <FoodCart item={item} key={item._id}></FoodCart>)
+            }
+          </div>
         </TabPanel>
 
-        <TabPanel>
-          <h2>Any content 3</h2>
+        <TabPanel className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 gap-10">
+            {
+              soups.map(item => <FoodCart item={item} key={item._id}></FoodCart>)
+            }
+          </div>
         </TabPanel>
-        <TabPanel>
-          <h2>Any content 4</h2>
+        <TabPanel className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 gap-10">
+            {
+              desserts.map(item => <FoodCart item={item} key={item._id}></FoodCart>)
+            }
+          </div>
         </TabPanel>
-        <TabPanel>
-          <h2>Any content 5</h2>
+        <TabPanel className="grid grid-cols-3 gap-10">
+          <div className="grid grid-cols-3 gap-10">
+            {
+              salads.map(item => <FoodCart item={item} key={item._id}></FoodCart>)
+            }
+          </div>
         </TabPanel>
       </Tabs>
 
