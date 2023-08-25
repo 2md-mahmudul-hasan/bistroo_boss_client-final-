@@ -1,5 +1,4 @@
-import React from 'react';
-import useMenu from '../hooks/useMenu';
+
 
 const FoodCart = ({ item }) => {
   const { name, image, price, recipe } = item;
