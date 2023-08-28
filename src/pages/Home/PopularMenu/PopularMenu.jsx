@@ -8,7 +8,7 @@ const PopularMenu = () => {
 
   const [menu] = useMenu()
   const popularItems = menu.filter(item => item.category === 'popular')
-  console.log(popularItems)
+  // console.log(popularItems)
   return (
     <div>
       <SectionTitle heading={'From our menu'} subheading={'popular items'}></SectionTitle>
